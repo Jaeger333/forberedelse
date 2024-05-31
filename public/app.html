@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Chore Tracker</title>
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Skole VGS</h1>
+  </header>
+ 
+
+  
+    
+    <br>
+    <br>
+
+    <section>
+      <h2>Mine fag</h2>
+      <div id ="datatabell">
+      </div>
+
+      <br>
+
+      <h1>legg til fag</h1>
+      <form id = "addForm" action="/addfag_user" method="POST">
+        <select id="selectSubjects" name="id"></select>
+        <button type="submit" id="addSubject"></button>
+      </form>
+
+      <br>
+      <h1>Fjern fag</h1>
+      <form id = "deleteForm">
+        <br>
+        <select id="selectSubject" name="id"></select>
+        <button type="submit" id="deleteSubject"></button>
+
+        <br>
+      </form>
+
+      <hr>
+      <br>
+
+      
+
+    </section>
+
+  
+</div>
+
+<form id="logoutForm" action="/logout" method="GET">
+  <button type="submit" id="btnLogout">Logg ut</button>
+</form>
+
+
+  <script src="./client.js"></script>
+</body>
+</html>
